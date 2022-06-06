@@ -23,9 +23,16 @@ namespace ExerciseClasses
             Book book = new Book();
             book.Show(title, author, content);
 
+            Console.WriteLine("-----------------------------------------------");
+            Converter converter = new Converter(440, 6, 550);
+            Console.WriteLine(converter.ConvertToAMD(5000, "Usd")); 
+            Console.WriteLine(converter.ConvertToAMD(5000, "Eur"));
+            Console.WriteLine(converter.ConvertToAMD(5000, "Rub"));
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine(converter.ConvertToValyut(5000, "Usd"));
+            Console.WriteLine(converter.ConvertToValyut(5000, "Eur"));
+            Console.WriteLine(converter.ConvertToValyut(5000, "Rub"));
             Console.ReadLine();
-
-            
         }
     }
 }
