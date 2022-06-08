@@ -32,6 +32,9 @@ namespace ExerciseClasses
             Console.WriteLine(converter.ConvertToValyut(5000, "Usd"));
             Console.WriteLine(converter.ConvertToValyut(5000, "Eur"));
             Console.WriteLine(converter.ConvertToValyut(5000, "Rub"));
+            Console.WriteLine("-----------------------------------------------");
+            Employee employee = new Employee("khachatur", "Manukyan");
+            employee.PayrollAndTaxCalculator("Banvor", 1);
             Console.ReadLine();
         }
     }
